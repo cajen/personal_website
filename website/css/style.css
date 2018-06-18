@@ -1,0 +1,187 @@
+* {
+	box-sizing: border-box;
+	margin-top: 0;
+}
+body, html{
+	font-family: 'Karla', sans-serif;
+	/*font-family: 'Poppins', sans-sarif;*/
+	/*font-weight: bolder;*/
+	margin: 0;
+	margin-top: 0;
+	height:100%; 
+}
+.header-image {
+	background-image: url("../media/clouds.jpg");
+	height: 30%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+/*	padding: 80px; 
+	text-align: center;
+	background: #b3b3ff;	
+	background: #b3b3b3;
+	color: white;*/
+}
+/*.header h1 {
+	font-size: 75px;
+	color: #ff6666;
+
+}*/
+.header-text {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	color: #ff6666;
+}
+.navbar {
+	overflow: hidden;
+	background-color: #311b31;
+}
+.navbar a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+}
+.navbar a.right {
+	float:right;
+}
+.navbar a:hover {
+	background-color: #ddd;
+	color: black;
+}
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	/*-ms-flex-wrap: wrap;*/
+	/*flex-wrap: wrap;*/
+}
+.side {
+	-ms-flex: 20%;
+	flex: 20%;
+	background-color: #f1f1f1;
+	/*padding: 20px;*/
+	padding: 0 8px;
+	margin-bottom: 16px;
+	flex-shrink: 1;
+}
+.main {
+	-ms-flex: 80%;
+	flex: 80%;
+	background-color: #f1f1f1;
+	padding: 0 8px;
+	/*text-align: center;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.proj_img {
+	max-height: 150px;
+	max-width: 150px;
+}
+@media screen and (max-width: 500px) {
+	.row {
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 400px) {
+	.navbar a {
+		float: none;
+		width: 100%;
+	}
+	.header-text {
+		font-size: 20px; 
+	}
+}
+@media screen and (max-height: 600px) {
+	.header-text {
+		font-size: 10px;
+	}
+}
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+}
+.picOfMe {
+	/*height: 200px;*/
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.column {
+	max-height: 300px;
+	max-width: 300px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	text-align: center;
+}
+.container {
+	padding: 0 16px;
+	font-weight: lighter;
+	text-align: center;
+}
+.container::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.proj_container	{
+	padding: 0 16px;
+	font-weight: lighter;
+	text-align: center;
+}
+.proj_container::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.contact_button {
+	border: none; 
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #311b31;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+}
+.contact_button:hover {
+	background-color: #555;
+}
+.picOfMe img {
+/*	max-height: 200px;
+	max-width: 200px;*/
+	width: 100%;
+}
+.column img {
+	/*width: 200px;
+	height: 200px;*/
+	width: 100%;
+	/*border-radius: 50%;*/
+	flex: 25%;
+}
+.fa {
+	padding: 10px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	/*margin: 5px 2px;*/
+	/*border-radius: 50%;*/
+}
+.fa:hover {
+	opacity: 0.7;
+}
+.fa-github {
+	/*background: white;*/
+	color: black;
+}
+.fa-linkedin {
+	color: black;
+}
