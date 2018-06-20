@@ -37,6 +37,9 @@ body, html{
 	font-size: 30px;
 	color: #ff6666;
 }
+.header-text p {
+	font-size: 20px;
+}
 .navbar {
 	overflow: hidden;
 	background-color: #311b31;
@@ -51,6 +54,9 @@ body, html{
 }
 .navbar a.right {
 	float:right;
+}
+#email {
+	display: none;
 }
 .navbar a:hover {
 	background-color: #ddd;
